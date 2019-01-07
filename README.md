@@ -9,11 +9,23 @@ bioRxiv 2018.
 
 Results
 -------
-`LIPIDS.FUSION.tsv` contains the lipids (HDL, LDL, TG, total chol) TWAS association statistics.
+`LIPIDS.FOCUS.XX.tsv` contains the gene-based fine-mapping analysis over TWAS associations using prior variance of XX = {40, 80}.
 
-Trait   Expression.Reference    Gene    Chr Tx.Start    Tx.End  Expression.h2g  Best.GWAS.SNP  
-Best.GWAS.SNP.Z.score   Top.eQTL.SNP    Top.eQTL.R2 Top.eQTL.Z  Top.eQTL.GWAS.Z N.SNPs  Non.zero.weights
-Best.fit.model  Model.5CV.R2    Model.5CV.P TWAS.Z  TWAS.
+| Column | Description |
+|--------|-------------|
+| `Expression.Reference` | Short description of the gene expression reference panel |
+| `Gene` | Canonical gene name |
+| `Chr` | Chromosome |
+| `Tx.Start` | Transcription start site |
+| `Tx.End` | Transcription end site |
+| `Region` | Identifier for a risk region |
+| `TWAS.Z` | Z-score for TWAS test of association |
+| `TWAS.P` | P-value for TWAS test |
+| `Resid.Z` | Residual Z-score after accounting for average signal at region |
+| `PIP` | Marginal posterior probability for explaining observed association signal at BLOCK |
+| `In.Cred.Set` | Boolean indicating whether the gene-model is in the 90% credible gene set |
+
+`LIPIDS.FUSION.tsv` contains the lipids (HDL, LDL, TG, total chol) TWAS association statistics.
 
 | Column | Description |
 |--------|-------------|
@@ -37,23 +49,6 @@ Best.fit.model  Model.5CV.R2    Model.5CV.P TWAS.Z  TWAS.
 | `Model.5CV.P` | P-value of cross-validation R2 estimate |
 | `TWAS.Z` | Z-score for TWAS test of association |
 | `TWAS.P` | P-value for TWAS test |
-
-
-`LIPIDS.FOCUS.XX.tsv` contains the secondary gene-based fine-mapping analysis over TWAS associations using prior variance of XX = {40, 80}.
-
-| Column | Description |
-|--------|-------------|
-| `Expression.Reference` | Short description of the gene expression reference panel |
-| `Gene` | Canonical gene name |
-| `Chr` | Chromosome |
-| `Tx.Start` | Transcription start site |
-| `Tx.End` | Transcription end site |
-| `Region` | Identifier for a risk region |
-| `TWAS.Z` | Z-score for TWAS test of association |
-| `TWAS.P` | P-value for TWAS test |
-| `Resid.Z` | Residual Z-score after accounting for average signal at region |
-| `PIP` | Marginal posterior probability for explaining observed association signal at BLOCK |
-| `In.Cred.Set` | Boolean indicating whether the gene-model is in the 90% credible gene set |
 
 Software and support
 --------------------
