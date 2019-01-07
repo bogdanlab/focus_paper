@@ -1,5 +1,5 @@
-Prostate Cancer TWAS in OncoArray GWAS Meta-analysis
-====================================================
+Fine-mapping transcriptome-wide association studies
+===================================================
 
 The repository contains the main results for the fine-mapping of transcriptome-wide association studies (TWAS) reported in
 
