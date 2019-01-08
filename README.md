@@ -13,6 +13,7 @@ Results
 
 | Column | Description |
 |--------|-------------|
+| `Trait`| The lipids trait investigated |
 | `Expression.Reference` | Short description of the gene expression reference panel |
 | `Gene` | Canonical gene name |
 | `Chr` | Chromosome |
