@@ -23,7 +23,7 @@ Results
 | `TWAS.Z` | Z-score for TWAS test of association |
 | `TWAS.P` | P-value for TWAS test |
 | `Resid.Z` | Residual Z-score after accounting for average signal at region |
-| `PIP` | Marginal posterior probability for explaining observed association signal at BLOCK |
+| `PIP` | Marginal posterior probability for explaining observed association signal at `Region` |
 | `In.Cred.Set` | Boolean indicating whether the gene-model is in the 90% credible gene set |
 
 `LIPIDS.FUSION.tsv` contains the lipids (HDL, LDL, TG, total chol) TWAS association statistics.
